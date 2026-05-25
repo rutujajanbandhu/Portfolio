@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className={styles.container}>
         <span className={styles.eyebrow}>
-          <span className={styles.pulse} /> Available for select collaborations
+          <span className={styles.pulse} /> {profile.availability}
         </span>
 
         <h1 className={styles.title}>
@@ -50,6 +50,15 @@ export default function Hero() {
             </svg>
           </a>
           <a href="#contact" className={styles.btnGhost}>Get in touch</a>
+          <a
+            href={profile.resume}
+            className={styles.btnGhost}
+            download
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download resume
+          </a>
         </div>
 
         <div className={styles.meta}>

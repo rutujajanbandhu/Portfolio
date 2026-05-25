@@ -18,6 +18,10 @@ npm run build
 npm run preview
 ```
 
+## Resume
+
+Place your PDF at `public/resume.pdf` so the **Download resume** links work on the site.
+
 ## Structure
 
 ```

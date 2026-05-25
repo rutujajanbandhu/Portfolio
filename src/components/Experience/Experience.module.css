@@ -43,7 +43,25 @@
   z-index: 1;
 }
 .role { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
-.company { color: var(--accent); margin-top: 4px; font-size: 14px; font-family: var(--font-mono); }
+.company {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--accent);
+  margin-top: 4px;
+  font-size: 14px;
+  font-family: var(--font-mono);
+}
+.pastBadge {
+  padding: 2px 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 100px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
 .points { margin: 18px 0 0; padding: 0; list-style: none; }
 .points li {
   position: relative;

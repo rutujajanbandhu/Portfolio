@@ -20,7 +20,10 @@ export default function Experience() {
               <div className={styles.dot} />
               <div className={styles.right}>
                 <h3 className={styles.role}>{item.role}</h3>
-                <div className={styles.company}>{item.company}</div>
+                <div className={styles.company}>
+                  {item.company}
+                  {item.past ? <span className={styles.pastBadge}>Past role</span> : null}
+                </div>
                 <ul className={styles.points}>
                   {item.points.map((p, j) => <li key={j}>{p}</li>)}
                 </ul>

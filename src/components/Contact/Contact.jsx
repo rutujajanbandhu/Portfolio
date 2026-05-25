@@ -24,6 +24,8 @@ export default function Contact() {
           </a>
 
           <div className={styles.socials}>
+            <a href={profile.resume} download target="_blank" rel="noreferrer">Resume</a>
+            <span>·</span>
             <a href={profile.socials.github} target="_blank" rel="noreferrer">GitHub</a>
             <span>·</span>
             <a href={profile.socials.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>

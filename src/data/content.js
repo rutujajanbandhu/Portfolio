@@ -6,6 +6,8 @@ export const profile = {
   location: 'India',
   email: 'rutujajanbandhu1@gmail.com',
   phone: '+91 92840 02725',
+  resume: '/resume.pdf',
+  availability: 'Open to AI / ML and product engineering roles',
   socials: {
     github: 'https://github.com/rutujajanbandhu',
     linkedin: 'https://www.linkedin.com/in/rutuja-janbandhu',
@@ -15,8 +17,8 @@ export const profile = {
 
 export const about = {
   body: [
-    "I'm an AI / ML engineer with a degree in Artificial Intelligence and Data Science from IIT Jodhpur. I work across the stack — from training models to shipping voice agents that talk to real customers.",
-    "Currently at Consultadd, I lead the development of AI voice agents on AWS, building end-to-end pipelines using Bedrock, Twilio, ElevenLabs and FastAPI. I care about products that actually work in production."
+    "I'm an AI / ML engineer with a B.Tech in Artificial Intelligence and Data Science from IIT Jodhpur. I work across the stack — from training models and RAG systems to shipping voice agents that talk to real customers in production.",
+    "Previously at Consultadd, I led AI voice agent development on AWS — building end-to-end pipelines with Bedrock, Twilio, ElevenLabs, and FastAPI that lifted prospect reach by 50–60% on live campaigns. I'm now open to new opportunities where I can build intelligent products end to end."
   ],
   stats: [
     { value: '50–60%', label: 'Prospect reach lift on live campaigns' },
@@ -31,10 +33,11 @@ export const experience = [
     role: 'Associate Software Engineer',
     company: 'Consultadd Private Limited',
     period: 'Jun 2025 — Mar 2026',
+    past: true,
     points: [
-      'Led AI voice agent development on AWS (Transcribe, Polly, Bedrock, Twilio, FastAPI) reaching 50–60% of prospects.',
+      'Led AI voice agent development on AWS (Transcribe, Polly, Bedrock, Twilio, FastAPI), reaching 50–60% of prospects on live campaigns.',
       'Selected to pilot AWS Connect for next-generation voice agent infrastructure.',
-      'Recognized with an 8% merit-based increment and expanded project ownership in the first cycle.'
+      'Earned an 8% merit-based increment and expanded project ownership in the first cycle.'
     ]
   },
   {
@@ -113,7 +116,7 @@ export const projects = [
 ];
 
 export const achievements = [
-  { title: '8% Merit Increment', detail: 'Recognized for strong first-cycle performance at Consultadd.' },
+  { title: '8% Merit Increment', detail: 'Recognized for strong first-cycle performance during tenure at Consultadd.' },
   { title: 'AWS Connect Pilot', detail: 'Selected to pilot next-gen voice agent infrastructure.' },
   { title: '98% Accuracy on MNIST', detail: 'Custom deep learning + GNN architecture.' },
   { title: 'IIT Jodhpur', detail: 'B.Tech in Artificial Intelligence & Data Science.' }

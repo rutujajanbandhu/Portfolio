@@ -8,7 +8,7 @@ export default function About() {
         <div className={`${styles.header} reveal`}>
           <span className={styles.index}>01 / About</span>
           <h2 className={styles.title}>
-            Engineering at the <span className={styles.titleMuted}>intersection of AI and product.</span>
+            Building AI systems that <span className={styles.titleMuted}>ship in the real world.</span>
           </h2>
           <span className={styles.divider} />
         </div>

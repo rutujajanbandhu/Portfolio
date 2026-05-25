@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className={styles.nav}>
       <a href="#home" className={styles.brand}>
-        <span className={styles.brandMark}>R</span>
+        <span className={styles.brandMark}>RJ</span>
         <span className={styles.brandName}>Rutuja</span>
       </a>
 
