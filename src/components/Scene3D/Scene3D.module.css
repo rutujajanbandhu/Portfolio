@@ -1,0 +1,58 @@
+.wrap {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(34, 211, 238, 0.10), transparent 55%),
+    radial-gradient(ellipse at 80% 90%, rgba(139, 92, 246, 0.10), transparent 55%),
+    #0a0b0d;
+  overflow: hidden;
+}
+
+.wrap canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* soft vignette to fade edges into the page */
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at center, transparent 40%, rgba(10, 11, 13, 0.55) 75%, rgba(10, 11, 13, 0.95) 100%);
+}
+
+/* subtle animated grid for futuristic depth */
+.grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(125, 211, 252, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 211, 252, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  animation: drift 24s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes drift {
+  from { background-position: 0 0, 0 0; }
+  to   { background-position: 56px 56px, 56px 56px; }
+}
+
+.fallback {
+  /* static premium gradient when 3D is disabled */
+}
+
+@media (max-width: 640px) {
+  .grid { background-size: 40px 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid { animation: none; }
+}
