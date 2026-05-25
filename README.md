@@ -2,7 +2,7 @@
 
 Minimal premium portfolio built with React + Vite + CSS Modules. No Tailwind. No TypeScript.
 Here it is -
-- [youtube-replica](https://rutuja-janbandhu.netlify.app/)
+- [rutuja-janbandhu](https://rutuja-janbandhu.netlify.app/)
 
 ## Install
 
